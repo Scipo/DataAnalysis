@@ -3,6 +3,7 @@ title: "Cyclistic bike-share"
 output:
   html_document: default
   pdf_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -10,20 +11,12 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ### **Ask Phase**
-1.	Questions:
-  - What is the problem you are trying to solve?
-  - How the company to increase its own profits using their old customers.
-  - How can your insights drive business decisions? 
-  - Based on the answer of the question one we can provide an insight how to convert casual ridders into annual members. 
-2.	Key tasks 
-  - Identify the business task how to convert casual ridders into annual members. 
-  - Consider key stakeholders – management.
 
 #### Identify the business task
 **“Cyclistic”** is a bike-share company. Until now, the company marketing strategy relied on broad consumer segments. They offered to their customers several pricing plans: **single-ride pass**, **full-day pass** and **annual membership**. The customers who buy **single-ride** or **full-day** pass are referred to as **casual riders**. Customer who purchase **annual membership** are called **members**.
 Based on the **annual income** a conclusion is made that **annual members** are more **profitable** than **casual riders**. The head of marketing wants a new strategy to be devised for converting casual riders into annual members. In order to do that, however, the marketing team needs to better understand how annual members differ, why casual rider would buy an annual membership.
 
-#### Questions:
+#### Question:
 - How do annual members and casual riders use Cyclistic bikes differently?
 
 ### **Prepare Phase** 
@@ -160,7 +153,8 @@ ggplot(df, aes(weekday, fill=member_casual))+
   scale_y_continuous(labels=comma)
 
 ```
-![Alt text](C:/Users/Home/Documents/Days.png)
+
+![Alt text](C:/Users/Home/Documents/Days.png) 
 
 ## **Conclusion**
 ### **Observation** 
